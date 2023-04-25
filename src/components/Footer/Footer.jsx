@@ -1,13 +1,22 @@
-import React from "react";
+import React from 'react';
 
 import {
   GithubOutlined,
   WhatsAppOutlined,
   LinkedinOutlined,
   MailOutlined,
-} from "@ant-design/icons";
-import { Button, Divider, Layout, Space, Tooltip, Typography } from "antd";
-import { footerStyle } from "./Footer.style";
+} from '@ant-design/icons';
+
+import {
+  Button,
+  Divider,
+  Layout,
+  Space,
+  Tooltip,
+  Typography,
+} from 'antd';
+
+import footerStyle from './Footer.style';
 
 const { Footer } = Layout;
 const { Text } = Typography;
@@ -16,16 +25,20 @@ function AppFooter() {
   return (
     <Footer style={footerStyle}>
       <Text type="secondary">
-        Bem-vindo ao nosso e-commerce de roupas e acessórios! <br />
+        Bem-vindo ao nosso e-commerce de roupas e acessórios!
+        <br />
         Este é um projeto pessoal desenvolvido com o objetivo de aplicar
-        conhecimentos em programação e aprimorar habilidades técnicas. <br />
+        conhecimentos em programação e aprimorar habilidades técnicas.
+        <br />
         Nosso site não é comercial e não tem fins lucrativos. Aqui, você
         encontra uma seleção de peças cuidadosamente escolhidas para ilustrar a
-        proposta do nosso projeto. <br />
-        Agradecemos pela sua visita e esperamos que goste do que oferecemos.{" "}
+        proposta do nosso projeto.
+        <br />
+        Agradecemos pela sua visita e esperamos que goste do que oferecemos.
         <br />
         Caso tenha alguma sugestão ou comentário, não hesite em entrar em
-        contato conosco. <br />
+        contato conosco.
+        <br />
         Obrigado por nos acompanhar nessa jornada!
       </Text>
       <Divider />
@@ -39,7 +52,7 @@ function AppFooter() {
               href="https://github.com/marcelogomes90/"
               target="_blank"
               icon={<GithubOutlined />}
-            ></Button>
+            />
           </Tooltip>
           <Tooltip title="WhatsApp">
             <Button
@@ -48,7 +61,7 @@ function AppFooter() {
               href="https://api.whatsapp.com/send?phone=5581998066509"
               target="_blank"
               icon={<WhatsAppOutlined />}
-            ></Button>
+            />
           </Tooltip>
           <Tooltip title="Linkedin">
             <Button
@@ -57,7 +70,7 @@ function AppFooter() {
               href="https://www.linkedin.com/in/marcelogomes90"
               target="_blank"
               icon={<LinkedinOutlined />}
-            ></Button>
+            />
           </Tooltip>
           <Tooltip title="E-mail">
             <Button
@@ -66,7 +79,7 @@ function AppFooter() {
               href="mailto:“marcelo.sobrinho@outlook.com"
               target="_blank"
               icon={<MailOutlined />}
-            ></Button>
+            />
           </Tooltip>
         </Space>
       </Space>

@@ -1,16 +1,24 @@
-import React from "react";
+import React from 'react';
 
 import {
   HeartOutlined,
   LoginOutlined,
   ShoppingCartOutlined,
   UserAddOutlined,
-} from "@ant-design/icons";
+} from '@ant-design/icons';
 
-import { Badge, Button, Image, Layout, Menu, Space, Tooltip } from "antd";
-import { headerStyle, menuStyle, logoStyle } from "./Header.style";
+import {
+  Badge,
+  Button,
+  Image,
+  Layout,
+  Menu,
+  Space,
+  Tooltip,
+} from 'antd';
 
-import logo from "../../assets/logo.png";
+import { headerStyle, menuStyle, logoStyle } from './Header.style';
+import logo from '../../assets/logo.png';
 
 const { Header } = Layout;
 
@@ -22,7 +30,7 @@ function AppHeader() {
         <Menu
           style={menuStyle}
           mode="horizontal"
-          defaultSelectedKeys={["home"]}
+          defaultSelectedKeys={['home']}
           collapsedWidth={0}
         >
           <Menu.Item key="home">Início</Menu.Item>
