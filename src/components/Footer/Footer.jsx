@@ -7,7 +7,7 @@ import {
   MailOutlined,
 } from "@ant-design/icons";
 import { Button, Divider, Layout, Space, Tooltip, Typography } from "antd";
-import { footerStyle } from "./Footer";
+import { footerStyle } from "./Footer.style";
 
 const { Footer } = Layout;
 const { Text } = Typography;
@@ -25,7 +25,8 @@ function AppFooter() {
         Agradecemos pela sua visita e esperamos que goste do que oferecemos.{" "}
         <br />
         Caso tenha alguma sugestão ou comentário, não hesite em entrar em
-        contato conosco. Obrigado por nos acompanhar nessa jornada!
+        contato conosco. <br />
+        Obrigado por nos acompanhar nessa jornada!
       </Text>
       <Divider />
       <Space direction="vertical">
