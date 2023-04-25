@@ -1,13 +1,13 @@
 import React from 'react';
-import AppHeader from './components/Header/Header';
-import AppFooter from './components/Footer/Footer';
+import { RouterProvider } from 'react-router-dom';
+import createRouter from './app/routes';
+
+import './style.css';
 
 function App() {
+  const router = createRouter();
   return (
-    <>
-      <AppHeader />
-      <AppFooter />
-    </>
+    <RouterProvider router={router} />
   );
 }
 
