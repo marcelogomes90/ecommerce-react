@@ -1,11 +1,11 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 
-import collectionsEntitiesReducer from '../entities/collections';
+import productsEntitiesReducer from '../reducers/entities/products';
 
 export const store = configureStore({
   reducer: {
     entities: combineReducers({
-      collections: collectionsEntitiesReducer,
+      products: productsEntitiesReducer,
     }),
   },
 });
