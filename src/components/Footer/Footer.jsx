@@ -25,16 +25,16 @@ function AppFooter() {
   return (
     <Footer style={footerStyle}>
       <Text type="secondary">
-        Bem-vindo ao nosso e-commerce de roupas e acessórios!
+        Bem-vindo ao nosso e-commerce!
         <br />
         Este é um projeto pessoal desenvolvido com o objetivo de aplicar
         conhecimentos em programação e aprimorar habilidades técnicas.
         <br />
         Nosso site não é comercial e não tem fins lucrativos. Aqui, você
-        encontra uma seleção de peças cuidadosamente escolhidas para ilustrar a
-        proposta do nosso projeto.
+        encontra uma seleção produtos para ilustrar a
+        proposta de uma loja virtual.
         <br />
-        Agradecemos pela sua visita e esperamos que goste do que oferecemos.
+        Agradecemos pela sua visita e esperamos que goste do projeto.
         <br />
         Caso tenha alguma sugestão ou comentário, não hesite em entrar em
         contato conosco.

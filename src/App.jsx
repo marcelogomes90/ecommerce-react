@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { ConfigProvider } from 'antd';
 import createRouter from './app/routes';
 
-import { store } from './app/store';
+import store from './app/store';
 import './style.css';
 
 const theme = {
