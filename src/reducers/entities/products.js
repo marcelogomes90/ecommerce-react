@@ -17,7 +17,7 @@ const productsEntitiesSlice = createSlice({
 });
 
 export const {
-  selectById: getProductsById,
+  selectAll: getProductsList,
 } = productsEntitiesAdapter.getSelectors((state) => state.entities?.products);
 
 export default productsEntitiesSlice.reducer;

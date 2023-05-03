@@ -37,7 +37,7 @@ function AppFooter() {
         Agradecemos pela sua visita e esperamos que goste do projeto.
         <br />
         Caso tenha alguma sugestão ou comentário, não hesite em entrar em
-        contato conosco.
+        contato.
         <br />
         Obrigado por nos acompanhar nessa jornada!
       </Text>
