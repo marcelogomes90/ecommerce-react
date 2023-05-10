@@ -13,5 +13,4 @@ export const logoStyle = {
 
 export const menuStyle = {
   borderBottom: 'none',
-  width: '320px',
 };
