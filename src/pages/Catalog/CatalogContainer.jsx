@@ -9,10 +9,10 @@ import {
 import { Rating } from 'react-simple-star-rating';
 import { HeartOutlined, ShoppingCartOutlined } from '@ant-design/icons';
 import { useDispatch, useSelector } from 'react-redux';
-import fetchProducts from '../../services/products';
-import { getProductsListState } from './Catalog.state';
+import fetchCatalog from '../../services/catalog';
+import { getCatalogListState } from './Catalog.state';
 import Catalog from './Catalog';
-import { getProductsList } from '../../reducers/entities/products';
+import { getCatalogList } from '../../reducers/entities/catalog';
 import {
   cardStyle,
   cardTextContainerStyle,
@@ -25,8 +25,8 @@ const { Text } = Typography;
 function CatalogContainer() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const productsList = useSelector(getProductsList);
-  const { loading } = useSelector(getProductsListState);
+  const catalogList = useSelector(getCatalogList);
+  const { loading } = useSelector(getCatalogListState);
 
   const onCardClick = useCallback((product) => {
     navigate(`/products/${product.id}`);
@@ -74,17 +74,17 @@ function CatalogContainer() {
         </Space>
       </div>
     </Card>
-  ), [productsList]);
+  ), [catalogList]);
 
   useEffect(() => {
-    dispatch(fetchProducts());
+    dispatch(fetchCatalog());
   }, []);
 
   return (
     <Catalog
       createProductCard={createProductCard}
       loading={loading}
-      productsList={productsList}
+      productsList={catalogList}
     />
   );
 }

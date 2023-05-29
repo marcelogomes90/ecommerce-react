@@ -1,14 +1,16 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 
-import productsListReducer from '../pages/Catalog/Catalog.state';
-import productsEntitiesReducer from '../reducers/entities/products';
+import catalogListReducer from '../pages/Catalog/Catalog.state';
+import productReducer from '../pages/Product/Product.state';
+import catalogEntitiesReducer from '../reducers/entities/catalog';
 
 const store = configureStore({
   reducer: {
     entities: combineReducers({
-      products: productsEntitiesReducer,
+      catalog: catalogEntitiesReducer,
     }),
-    productsList: productsListReducer,
+    catalogList: catalogListReducer,
+    product: productReducer,
   },
 });
 

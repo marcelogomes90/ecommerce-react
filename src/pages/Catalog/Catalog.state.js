@@ -1,31 +1,31 @@
 /* eslint-disable no-param-reassign */
 import { createSlice, isAnyOf } from '@reduxjs/toolkit';
 
-import fetchProducts from '../../services/products';
-import { productsEntitiesAdapter } from '../../reducers/entities/products';
+import fetchCatalog from '../../services/catalog';
+import { catalogEntitiesAdapter } from '../../reducers/entities/catalog';
 
-const INITIAL_STATE = productsEntitiesAdapter.getInitialState({
+const INITIAL_STATE = catalogEntitiesAdapter.getInitialState({
   loading: null,
 });
 
-const invoicesListSlice = createSlice({
+const catalogListSlice = createSlice({
   extraReducers: (builder) => {
     builder
-      .addCase(fetchProducts.pending, (state) => {
+      .addCase(fetchCatalog.pending, (state) => {
         state.loading = true;
       })
       .addMatcher(isAnyOf(
-        fetchProducts.fulfilled,
-        fetchProducts.rejected,
+        fetchCatalog.fulfilled,
+        fetchCatalog.rejected,
       ), (state) => {
         state.loading = null;
       });
   },
   initialState: INITIAL_STATE,
-  name: 'productsList',
+  name: 'catalogList',
   reducers: {},
 });
 
-export const getProductsListState = (state) => state.productsList;
+export const getCatalogListState = (state) => state.catalogList;
 
-export default invoicesListSlice.reducer;
+export default catalogListSlice.reducer;
