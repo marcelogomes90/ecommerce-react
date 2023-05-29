@@ -9,19 +9,19 @@ function Catalog({ createProductCard, productsList }) {
   return (
     <Space direction="vertical" style={containerStyle}>
       <Title level={3}>Moda Masculina</Title>
-      <Space size="large">
+      <Space size="large" wrap>
         {productsList?.filter((list) => list.category === 'men\'s clothing').map(createProductCard)}
       </Space>
       <Title level={3}>Moda Feminina</Title>
-      <Space size="large">
+      <Space size="large" wrap>
         { productsList?.filter((list) => list.category === 'women\'s clothing').map(createProductCard)}
       </Space>
       <Title level={3}>Jóias</Title>
-      <Space size="large">
+      <Space size="large" wrap>
         { productsList?.filter((list) => list.category === 'jewelery').map(createProductCard)}
       </Space>
       <Title level={3}>Eletrônicos</Title>
-      <Space size="large">
+      <Space size="large" wrap style={{ marginBottom: 40 }}>
         { productsList?.filter((list) => list.category === 'electronics').map(createProductCard)}
       </Space>
     </Space>

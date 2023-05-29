@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
   Card,
   Space,
@@ -23,13 +24,20 @@ const { Text } = Typography;
 
 function CatalogContainer() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const productsList = useSelector(getProductsList);
   const { loading } = useSelector(getProductsListState);
 
+  const onCardClick = useCallback((product) => {
+    navigate(`/products/${product.id}`);
+  }, []);
+
   const createProductCard = useCallback((product) => (
     <Card
+      key={product.id}
       loading={loading}
       hoverable
+      onClick={() => onCardClick(product)}
       style={cardStyle}
       cover={(
         <img

@@ -25,13 +25,13 @@ function AppFooter() {
   return (
     <Footer style={footerStyle}>
       <Text type="secondary">
-        Bem-vindo ao nosso e-commerce!
+        Bem-vindo ao futurewear e-commerce!
         <br />
         Este é um projeto pessoal desenvolvido com o objetivo de aplicar
         conhecimentos em programação e aprimorar habilidades técnicas.
         <br />
         Nosso site não é comercial e não tem fins lucrativos. Aqui, você
-        encontra uma seleção produtos para ilustrar a
+        encontra uma seleção de produtos para ilustrar a
         proposta de uma loja virtual.
         <br />
         Agradecemos pela sua visita e esperamos que goste do projeto.
