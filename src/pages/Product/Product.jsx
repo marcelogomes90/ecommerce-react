@@ -1,9 +1,7 @@
 /* eslint-disable react/prop-types */
 import {
   Button,
-  Divider,
   Image,
-  Input,
   Radio,
   Space,
   Typography,
@@ -15,6 +13,7 @@ import {
 
 import { Rating } from 'react-simple-star-rating';
 import React from 'react';
+import { spaceContainer, StyledInputNumber } from './Product.style';
 
 const { Text, Title } = Typography;
 
@@ -22,7 +21,7 @@ function Product({ loading, product }) {
   return (
     <div>
       {loading ? null : (
-        <Space align="center" size={[100]} style={{ marginTop: 50, marginBottom: 50, justifyContent: 'center', width: '100%' }}>
+        <Space align="center" size={[100]} style={spaceContainer}>
           <Image
             width={400}
             height={460}
@@ -52,7 +51,7 @@ function Product({ loading, product }) {
               </Text>
               <Space style={{ marginTop: 6 }}>
                 <Button shape="circle" size="small">-</Button>
-                <Input defaultValue={1} maxLength={2} type="number" style={{ width: 80 }} />
+                <StyledInputNumber defaultValue={1} maxLength={2} type="number" />
                 <Button shape="circle" size="small">+</Button>
               </Space>
               <Space style={{ marginTop: 12 }}>
