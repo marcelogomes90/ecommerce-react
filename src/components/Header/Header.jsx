@@ -31,7 +31,6 @@ function AppHeader() {
           style={menuStyle}
           mode="horizontal"
           defaultSelectedKeys={['home']}
-          collapsedWidth={0}
         >
           <Menu.Item key="home">Início</Menu.Item>
           <Menu.Item key="about">Sobre</Menu.Item>

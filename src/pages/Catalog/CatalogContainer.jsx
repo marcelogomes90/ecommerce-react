@@ -18,6 +18,9 @@ import {
   cardTextContainerStyle,
   iconStyle,
   imageStyle,
+  priceStyle,
+  ratingStyle,
+  titleStyle,
 } from './Catalog.style';
 
 const { Text } = Typography;
@@ -57,10 +60,10 @@ function CatalogContainer() {
       ]}
     >
       <div direction="vertical" style={cardTextContainerStyle}>
-        <Text style={{ fontSize: 16 }} ellipsis>
+        <Text style={titleStyle} ellipsis>
           {product.title}
         </Text>
-        <Text strong style={{ fontSize: 18 }}>
+        <Text strong style={priceStyle}>
           {`R$ ${product.price.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`}
         </Text>
         <Space align="start">
@@ -70,7 +73,7 @@ function CatalogContainer() {
             initialValue={product.rating.rate}
             size={20}
           />
-          <Text strong style={{ fontSize: 14 }}>{`(${product.rating.count})`}</Text>
+          <Text strong style={ratingStyle}>{`(${product.rating.count})`}</Text>
         </Space>
       </div>
     </Card>

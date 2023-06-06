@@ -15,8 +15,35 @@ export const StyledInputNumber = styled(Input)`
 `;
 
 export const spaceContainer = {
-  marginTop: 50,
-  marginBottom: 50,
   justifyContent: 'center',
-  width: '100%',
+  padding: 50,
+};
+
+export const infosContainer = {
+  width: 500,
+};
+
+export const titleStyle = {
+  marginBottom: 12,
+  marginTop: 0,
+};
+
+export const ratingContainer = {
+  marginBottom: 10,
+};
+
+export const ratingStyle = {
+  fontSize: 14,
+};
+
+export const priceStyle = {
+  fontSize: 24,
+};
+
+export const inputContainer = {
+  marginTop: 6,
+};
+
+export const buttonsContainer = {
+  marginTop: 12,
 };

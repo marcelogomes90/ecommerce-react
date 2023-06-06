@@ -7,7 +7,7 @@ const { Title } = Typography;
 
 function Catalog({ createProductCard, productsList }) {
   return (
-    <Space direction="vertical" style={containerStyle}>
+    <Space direction="vertical" size="middle" style={containerStyle}>
       <Title level={3}>Moda Masculina</Title>
       <Space size="large" wrap>
         {productsList?.filter((list) => list.category === 'men\'s clothing').map(createProductCard)}
@@ -21,7 +21,7 @@ function Catalog({ createProductCard, productsList }) {
         { productsList?.filter((list) => list.category === 'jewelery').map(createProductCard)}
       </Space>
       <Title level={3}>Eletrônicos</Title>
-      <Space size="large" wrap style={{ marginBottom: 40 }}>
+      <Space size="large" wrap>
         { productsList?.filter((list) => list.category === 'electronics').map(createProductCard)}
       </Space>
     </Space>

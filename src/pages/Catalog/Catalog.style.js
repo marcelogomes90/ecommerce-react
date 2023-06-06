@@ -22,6 +22,18 @@ export const iconStyle = {
 };
 
 export const containerStyle = {
-  marginLeft: 100,
-  marginRight: 100,
+  justifyContent: 'center',
+  padding: 100,
+};
+
+export const titleStyle = {
+  fontSize: 16,
+};
+
+export const priceStyle = {
+  fontSize: 18,
+};
+
+export const ratingStyle = {
+  fontSize: 14,
 };

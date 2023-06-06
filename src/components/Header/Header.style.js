@@ -1,5 +1,8 @@
 export const headerStyle = {
   display: 'flex',
+  position: 'fixed',
+  width: '100%',
+  zIndex: 1,
   justifyContent: 'space-between',
   backgroundColor: '#ffffff',
   borderBottom: '1px solid #e8e8e8',
@@ -13,4 +16,5 @@ export const logoStyle = {
 
 export const menuStyle = {
   borderBottom: 'none',
+  width: 320,
 };
