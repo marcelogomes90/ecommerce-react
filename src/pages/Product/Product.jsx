@@ -15,12 +15,12 @@ import { Rating } from 'react-simple-star-rating';
 import React from 'react';
 import {
   buttonsContainer,
+  containerStyle,
   infosContainer,
   inputContainer,
   priceStyle,
   ratingContainer,
   ratingStyle,
-  spaceContainer,
   StyledInputNumber,
   titleStyle,
 } from './Product.style';
@@ -30,7 +30,7 @@ const { Text, Title } = Typography;
 function Product({ loading, product }) {
   return (
     loading ? null : (
-      <Space align="center" size={[50]} style={spaceContainer}>
+      <Space align="center" size={[50]} style={containerStyle}>
         <Image
           width={300}
           height={420}

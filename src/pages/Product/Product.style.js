@@ -14,9 +14,12 @@ export const StyledInputNumber = styled(Input)`
   }
 `;
 
-export const spaceContainer = {
+export const containerStyle = {
+  boxSize: 'border-box',
   justifyContent: 'center',
-  padding: 50,
+  width: '100%',
+  marginTop: 100,
+  marginBottom: 60,
 };
 
 export const infosContainer = {

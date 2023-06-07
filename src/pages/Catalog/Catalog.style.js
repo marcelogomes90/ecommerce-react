@@ -22,8 +22,10 @@ export const iconStyle = {
 };
 
 export const containerStyle = {
-  justifyContent: 'center',
-  padding: 100,
+  marginTop: 100,
+  marginBottom: 60,
+  marginLeft: 100,
+  marginRight: 100,
 };
 
 export const titleStyle = {
