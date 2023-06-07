@@ -22,7 +22,7 @@ export const iconStyle = {
 };
 
 export const containerStyle = {
-  marginTop: 100,
+  marginTop: 80,
   marginBottom: 60,
   marginLeft: 100,
   marginRight: 100,

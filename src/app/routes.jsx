@@ -12,11 +12,11 @@ const createRouter = () => createBrowserRouter([{
 }, {
   children: [{
     element: <CatalogContainer />,
-    path: '/',
+    path: '/catalog',
     index: true,
   }, {
     element: <ProductContainer />,
-    path: '/products/:id',
+    path: '/catalog/:id',
   }],
   element: <Root />,
   path: '/',

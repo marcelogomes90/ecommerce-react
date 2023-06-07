@@ -15,7 +15,6 @@ export const StyledInputNumber = styled(Input)`
 `;
 
 export const containerStyle = {
-  boxSize: 'border-box',
   justifyContent: 'center',
   width: '100%',
   marginTop: 100,

@@ -32,7 +32,7 @@ function CatalogContainer() {
   const { loading } = useSelector(getCatalogListState);
 
   const onCardClick = useCallback((product) => {
-    navigate(`/products/${product.id}`);
+    navigate(`/catalog/${product.id}`);
   }, []);
 
   const createProductCard = useCallback((product) => (
