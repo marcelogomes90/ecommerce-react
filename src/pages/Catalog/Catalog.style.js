@@ -1,13 +1,13 @@
 export const cardStyle = {
-  width: 290,
-  height: 390,
+  width: 270,
+  height: 380,
 };
 
 export const cardTextContainerStyle = {
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'space-between',
-  height: 110,
+  height: 100,
 };
 
 export const imageStyle = {
@@ -15,6 +15,7 @@ export const imageStyle = {
   marginTop: 20,
   width: 140,
   height: 160,
+  objectFit: 'contain',
 };
 
 export const iconStyle = {

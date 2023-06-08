@@ -30,11 +30,12 @@ const { Text, Title } = Typography;
 function Product({ loading, product }) {
   return (
     loading ? null : (
-      <Space align="center" size={[50]} style={containerStyle}>
+      <Space align="center" size={[100]} style={containerStyle}>
         <Image
           width={300}
           height={420}
           src={product?.image}
+          style={{ objectFit: 'contain' }}
         />
         <Space direction="vertical" style={infosContainer}>
           <Title level={3} style={titleStyle}>{product?.title}</Title>

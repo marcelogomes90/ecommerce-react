@@ -22,7 +22,8 @@ import logo from '../../assets/logo.png';
 
 const { Header } = Layout;
 
-function AppHeader() {
+// eslint-disable-next-line react/prop-types
+function AppHeader({ currentMenu, onMenuItemClick }) {
   return (
     <Header style={headerStyle}>
       <Image preview={false} src={logo} alt="Logo" style={logoStyle} />
@@ -30,11 +31,12 @@ function AppHeader() {
         <Menu
           style={menuStyle}
           mode="horizontal"
-          defaultSelectedKeys={['home']}
+          onClick={onMenuItemClick}
+          selectedKeys={[currentMenu]}
         >
           <Menu.Item key="home">Início</Menu.Item>
           <Menu.Item key="about">Sobre</Menu.Item>
-          <Menu.Item key="products">Produtos</Menu.Item>
+          <Menu.Item key="catalog">Catálogo</Menu.Item>
           <Menu.Item key="contact">Contato</Menu.Item>
         </Menu>
         <Button type="primary" icon={<LoginOutlined />}>
