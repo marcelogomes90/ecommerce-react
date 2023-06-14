@@ -49,12 +49,6 @@ function Product({ loading, product }) {
             <Text strong style={ratingStyle}>{`(${product?.rating.count})`}</Text>
           </Space>
           <Text>{product?.description}</Text>
-          <Text strong>Tamanho:</Text>
-          <Radio.Group defaultValue="p" buttonStyle="solid">
-            <Radio.Button value="a">P</Radio.Button>
-            <Radio.Button value="b">M</Radio.Button>
-            <Radio.Button value="c">G</Radio.Button>
-          </Radio.Group>
           <Text strong style={priceStyle}>
             {`R$ ${product?.price.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`}
           </Text>

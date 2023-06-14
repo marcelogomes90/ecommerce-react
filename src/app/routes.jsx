@@ -7,13 +7,16 @@ import CatalogContainer from '../pages/Catalog/CatalogContainer';
 import Home from '../pages/Home/Home';
 
 const createRouter = () => createBrowserRouter([{
-  element: <Home />,
-  path: '/home',
+  element: <Root />,
+  path: '/',
 }, {
   children: [{
+    element: <Home />,
+    path: '/home',
+    index: true,
+  }, {
     element: <CatalogContainer />,
     path: '/catalog',
-    index: true,
   }, {
     element: <ProductContainer />,
     path: '/catalog/:id',
