@@ -14,55 +14,18 @@ import banner2 from '../../assets/banner2.png';
 import banner3 from '../../assets/banner3.png';
 import banner4 from '../../assets/banner4.png';
 
+import {
+  carouselContent,
+  productContent,
+  productImage,
+  productTitle,
+  productsContainer,
+  divImage,
+  brandImage,
+  brandsContainer,
+} from './Home.style';
+
 const { Title, Text } = Typography;
-
-const carouselContent = {
-  marginTop: 64,
-  height: '640px',
-  width: '100%',
-  background: '#364d79',
-};
-
-const productsContainer = {
-  display: 'flex',
-  justifyContent: 'center',
-  marginBottom: 100,
-}
-
-const brandsContainer = {
-  display: 'flex',
-  justifyContent: 'center',
-  marginBottom: 100,
-}
-
-const brandImage = {
-  width: 380,
-  height: 90,
-}
-
-const productImage = {
-  width: 140,
-  height: 140,
-}
-
-const productContent = {
-  textAlign: 'center',
-}
-
-const productTitle = {
-  textAlign: 'center',
-  margin: 60
-}
-
-const divImage = {
-  width: 180,
-  height: 180,
-  borderRadius: 90,
-  backgroundColor: '#eaeaea',
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-}
 
 function Home() {
   return (
