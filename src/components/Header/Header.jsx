@@ -23,7 +23,7 @@ import logo from '../../assets/logo.png';
 const { Header } = Layout;
 
 // eslint-disable-next-line react/prop-types
-function AppHeader({ currentMenu, onMenuItemClick }) {
+function AppHeader({ currentMenu, onLoginClick, onMenuItemClick }) {
   return (
     <Header style={headerStyle}>
       <Image preview={false} src={logo} alt="Logo" style={logoStyle} />
@@ -39,7 +39,7 @@ function AppHeader({ currentMenu, onMenuItemClick }) {
           <Menu.Item key="catalog">Catálogo</Menu.Item>
           <Menu.Item key="contact">Contato</Menu.Item>
         </Menu>
-        <Button type="primary" icon={<LoginOutlined />}>
+        <Button type="primary" icon={<LoginOutlined />} onClick={onLoginClick}>
           Login
         </Button>
         <Button icon={<UserAddOutlined />}>Registrar</Button>

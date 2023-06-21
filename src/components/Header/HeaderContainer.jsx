@@ -11,9 +11,14 @@ function AppHeaderContainer() {
     navigate(`/${event.key}`);
   });
 
+  const onLoginClick = useCallback(() => {
+    navigate('/login');
+  })
+
   return (
     <AppHeader
       currentMenu={currentMenu}
+      onLoginClick={onLoginClick}
       onMenuItemClick={onMenuItemClick}
     />
   );

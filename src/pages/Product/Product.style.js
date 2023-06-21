@@ -19,6 +19,7 @@ export const containerStyle = {
   width: '100%',
   marginTop: 100,
   marginBottom: 60,
+  height: 600,
 };
 
 export const infosContainer = {
